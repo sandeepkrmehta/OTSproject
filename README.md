@@ -18,49 +18,62 @@
 
 (3) Database
 
-Tables
-Candidate : username(Primary_key), password, name, test_attempt, points(0-10)
-Questions : q_id(Primary_key), que, option(a, b, c, d), ans
-Result    : result_id(primary_key), username, date, time, attempt, right, wrong, points
+    Tables
+    Candidate : username(Primary_key), password, name, test_attempt, points(0-10)
+    Questions : q_id(Primary_key), que, option(a, b, c, d), ans
+    Result    : result_id(primary_key), username, date, time, attempt, right, wrong, points
 
 
 Step 1:
 (i) DOWNLOAD PYTHON : 
- -->Window User: https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe
+    -->Window User: https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe
 
 (ii) Install PIP file
-command   
 
- --> PIP INSTALL DJANGO
+command   
+            
+    PIP INSTALL DJANGO
 
 (iii) Create Project
- --> django-admin startproject myproject
- --> cd myproject
+ 
+     -->django-admin startproject myproject
+     --> cd myproject
 
 (iv) Create App
- --> python manage.py startapp OTS
+     
+     --> python manage.py startapp OTS
 
 (v) Create templates and static directory
 
 (vi) update settings.py
-
+        
+        Register your OTS Application
+        INSTALLED_APPS = [
+        'OTS', //OTS Apllication register 
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'django.contrib.staticfiles',
+]
 (vii) Define modules
 
 (viii) make migration and migrate
 
 (iX) views
 
-Welcome()
-candidateRegistrationForm()
-CandidateRegistration()
-login view()
-CandidateHome()
-testPaper()
-calculateTestResult()
-testResult()
-testResultHistory()
-ShowTestResult()
-Logoutview()
+    Welcome() 
+    candidateRegistrationForm()
+    CandidateRegistration()
+    login view()
+    CandidateHome()
+    testPaper()
+    calculateTestResult()
+    testResult()
+    testResultHistory()
+    ShowTestResult()
+    Logoutview()
 
 (x) Define templates
 
@@ -70,8 +83,9 @@ Logoutview()
 
 * Fist of all creates models:
       after that run command:
-< python manage.py makemigrations OTS>
-< python manage.py migrate OTS>
+
+      < python manage.py makemigrations OTS>
+        < python manage.py migrate OTS>
 
 
   
