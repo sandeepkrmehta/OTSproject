@@ -1,5 +1,8 @@
 -------------------  Ajenda Of Project  ---------------
+
+
 (1) Project Statement
+
     Online Testing System(Exam):
     User can see a welcome page(Landing page) , from where he/she can read all needful
     details of OTS and link to create an account, and a link to login for registered users.
@@ -14,6 +17,7 @@
 
 
 (3) Database
+
 Tables
 Candidate : username(Primary_key), password, name, test_attempt, points(0-10)
 Questions : q_id(Primary_key), que, option(a, b, c, d), ans
@@ -25,7 +29,8 @@ Step 1:
  -->Window User: https://www.python.org/ftp/python/3.12.5/python-3.12.5-amd64.exe
 
 (ii) Install PIP file
-command
+command   
+
  --> PIP INSTALL DJANGO
 
 (iii) Create Project
@@ -57,9 +62,16 @@ testResultHistory()
 ShowTestResult()
 Logoutview()
 
-
 (x) Define templates
 
-(xi) Set Urls 
+(xi) Set Urls
+
+--------------------------------------------------
+
+* Fist of all creates models:
+      after that run command:
+< python manage.py makemigrations OTS>
+< python manage.py migrate OTS>
+
 
   
