@@ -43,7 +43,20 @@ command
 
 (viii) make migration and migrate
 
-(iX) define views
+(iX) views
+
+Welcome()
+candidateRegistrationForm()
+CandidateRegistration()
+login view()
+CandidateHome()
+testPaper()
+calculateTestResult()
+testResult()
+testResultHistory()
+ShowTestResult()
+Logoutview()
+
 
 (x) Define templates
 
