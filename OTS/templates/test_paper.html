@@ -1,0 +1,25 @@
+{% extends 'main.html' %}
+
+{% block title%} OTS - Test Paper {%endblock title%}
+{% block top%}
+{% endblock%}
+{% block content%}
+<form action="{% url 'OTS:calculateTest' %}" method="post">
+    {% csrf_token %}
+    {% for question in questions %}
+    <div class="question">
+        <input type="hidden" name="qno{{question.qid}}" value="{{question.qid}}">
+        {{question.que}}
+    </div>
+    <div class="option">
+        <input type="radio" name="q{{question.qid}}" value="a">
+        <div>{{question.a}}</div>
+    </div>
+    <div class="option"><input type="radio" name="q{{question.qid}}" value="b">{{question.b}}</div>
+    <div class="option"><input type="radio" name="q{{question.qid}}" value="c">{{question.c}}</div>
+    <div class="option"><input type="radio" name="q{{question.qid}}" value="d">{{question.d}}</div>
+    </div>
+    {% endfor %}
+    <div><input type="submit" value="Submit"></div>
+</form>
+{% endblock%}
